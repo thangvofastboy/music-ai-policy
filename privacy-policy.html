@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Music AI</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --accent: #ec4899;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .badge {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .meta {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+        p, li {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        .permission-card {
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+        .permission-title {
+            font-weight: 700;
+            color: #a5b4fc;
+            margin-bottom: 4px;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Music AI <span class="badge">Privacy Policy</span></h1>
+            <p class="meta">Effective Date: September 16, 2026 | Application: <strong>Music AI (com.cfi.music_ai)</strong></p>
+        </header>
+
+        <section>
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Music AI</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how our mobile application collects, uses, discloses, and safeguards your information when you use our services.</p>
+            <p>By using Music AI, you agree to the collection and use of information in accordance with this policy.</p>
+        </section>
+
+        <section>
+            <h2>2. Permissions and Data We Collect</h2>
+            <p>Music AI requests access to certain device features solely to enable core app functionalities:</p>
+
+            <div class="permission-card">
+                <div class="permission-title">🎤 Audio Recording (RECORD_AUDIO / Microphone)</div>
+                <p>Used strictly when you explicitly choose to record your voice or humming to generate songs or voice-based prompts. We do not record audio in the background, and audio data is never retained or sold to third parties.</p>
+            </div>
+
+            <div class="permission-card">
+                <div class="permission-title">💳 In-App Purchases & Billing (BILLING)</div>
+                <p>Used to process payments, subscriptions, and AI generation credits. Financial transactions are securely handled by the official Google Play In-App Billing system. We never store or have access to your credit card or sensitive banking details.</p>
+            </div>
+
+            <div class="permission-card">
+                <div class="permission-title">🎵 Foreground Service & Media Playback (FOREGROUND_SERVICE)</div>
+                <p>Used to allow uninterrupted audio playback and track controls through lock screen and notification media player controls while you switch between apps or turn off the screen.</p>
+            </div>
+
+            <div class="permission-card">
+                <div class="permission-title">📁 Media & Storage (READ_MEDIA_AUDIO / IMAGES)</div>
+                <p>Used only when you select custom audio samples or cover artwork images from your device library to personalize your tracks.</p>
+            </div>
+
+            <div class="permission-card">
+                <div class="permission-title">🌐 Internet & Network State (INTERNET / ACCESS_NETWORK_STATE)</div>
+                <p>Required to connect to cloud AI music generation services, stream generated music, check server status, and sync your music library.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. AI Processing & Third-Party Services</h2>
+            <p>Music AI integrates advanced AI technology to generate music:</p>
+            <ul>
+                <li><strong>On-Device AI (Google Gemini Nano / MediaPipe):</strong> Where supported, prompt optimization runs entirely locally on your device without sending text to the cloud.</li>
+                <li><strong>Cloud AI Generation Partners:</strong> When generating audio tracks, your user-provided text prompts and optional audio samples are securely transmitted via HTTPS to cloud AI generation engines (such as Suno AI, Udio, Sonauto, and Stability AI) to synthesize your music.</li>
+                <li><strong>Google Play Services:</strong> Used for in-app purchase validation, app updates, and standard diagnostic crash logs.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Storage and Security</h2>
+            <p>Your saved tracks, playlists, and settings are stored locally on your device using SQLite / Drift database and encrypted storage (Flutter Secure Storage). We implement industry-standard encryption protocols (HTTPS/TLS) for all data in transit.</p>
+        </section>
+
+        <section>
+            <h2>5. Data Retention & Deletion</h2>
+            <p>You have full control over your data. You can delete individual songs, playlists, or entire local cache directly within the application settings at any time. If you wish to request deletion of any account-associated data, please email us at the contact address below.</p>
+        </section>
+
+        <section>
+            <h2>6. Children's Privacy</h2>
+            <p>Music AI does not knowingly collect or solicit personal information from anyone under the age of 13. If you believe that a child under 13 has provided us with personal information, please contact us immediately so we can promptly delete it.</p>
+        </section>
+
+        <section>
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions, suggestions, or privacy inquiries regarding Music AI, please contact us at:</p>
+            <ul>
+                <li><strong>Developer / Organization:</strong> CFI Music AI Team</li>
+                <li><strong>Email:</strong> <a href="mailto:thang.vo@fastboy.net">thang.vo@fastboy.net</a></li>
+                <li><strong>Application ID:</strong> com.cfi.music_ai</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Music AI. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
